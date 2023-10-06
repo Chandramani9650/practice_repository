@@ -1,0 +1,14 @@
+#prime number -> if any number is divide 1 and itself is called prime number
+N = int(input("Enter number"))
+flag  = True
+if(N<2):
+  print("N is not a prime number")
+else:
+  for i in range(2,N):
+    if N%i==0:
+      flag = False
+      break
+if flag==False:
+  print("N is not a prime number")
+else:
+  print("N is a prime number")
